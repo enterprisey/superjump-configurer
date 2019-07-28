@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Superjump config</title>
+    <link rel="alternate" type="application/x-wiki" title="Edit this file on GitHub!" href="https://github.com/APerson241/pending-subs/edit/master/index.html" />
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>The superjump configuration creator</h1>
+
+    <nav style="font-size: 80%"><a href="https://tools.wmflabs.org/apersonbot/">Tools</a> &gt; <b>Superjump config</b></nav>
+    <p>
+    This tool will help you create <a href="https://en.wikipedia.org/wiki/User:Enterprisey/superjump">superjump</a> configurations.
+    </p>
+
+    <h2>How to use</h2>
+    <p>The small text fields are for single keystrokes, like <code>a</code> for pressing "A". The big text fields are for navigating to pages. For example, this setup would send you to the main page whenever you press the access key <code>a</code>:</p>
+    <p><img src="images/example-1-main-page.png" /></p>
+    <p>The "switch" link switches between a big text field and a submenu. A submenu will present another menu after you've typed the appropriate keystrokes. For example, this setup will bring up a submenu when you press the access key <code>a</code>. The submenu has two choices: you can press <kbd>b</kbd> for the main page, and <kbd>c</kbd> for the Requests for Adminship homepage:</p>
+    <p><img src="images/example-2-submenu.png" /></p>
+    <p>When you're done, press the "Export and copy to clipboard" button, then go to your own <a href='https://en.wikipedia.org/wiki/Special:MyPage/superjump-config.json'>superjump configuration page</a>, edit it, and paste, replacing the existing contents.</p>
+
+    <hr />
+    <h2>Main edit area</h2>
+
+    <div id="tree">
+      <table><tbody></tbody></table>
+      <br />
+      <button class="add-shortcut">Add shortcut</button>
+    </div>
+
+    <hr />
+    <button id="export-btn">Export and copy to clipboard</button>
+    <br />
+    <textarea id="json" readonly></textarea>
+
+    <div id="error"></div>
+
+    <footer>
+
+      <a href="https://en.wikipedia.org/wiki/User:Enterprisey" title="Enterprisey's user page on the English Wikipedia">Enterprisey</a> (<a href="https://en.wikipedia.org/wiki/User_talk:Enterprisey" title="Enterprisey's talk page on the English Wikipedia">talk!</a>) &middot; <a href="https://github.com/enterprisey/superjump-configurer" title="Source code on GitHub">Source code</a> &middot; <a href="https://github.com/enterprisey/superjump-configurer/issues" title="Issues on GitHub">Issues</a>
+
+    </footer>
+
+  </body>
+
+</html>
